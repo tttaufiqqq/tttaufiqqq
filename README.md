@@ -1,9 +1,4 @@
 <div align="center">
-
-# Hi, I'm Taufiq 👋
-
-**CS (Database Management) @ Universiti Teknikal Malaysia Melaka (UTeM)**
-
 [![GitHub followers](https://img.shields.io/github/followers/tttaufiqqq?style=flat-square&color=6e40c9&labelColor=0d1117&label=followers)](https://github.com/tttaufiqqq)
 ![Contributions](https://img.shields.io/badge/2026_contributions-931-6e40c9?style=flat-square&labelColor=0d1117)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=tttaufiqqq.tttaufiqqq)
