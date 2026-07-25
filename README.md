@@ -52,31 +52,4 @@
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
----
-
-## 📊 `. ★ GitHub Stats ★ .`
-
-<div align="center">
-
-![Taufiq's GitHub stats](https://github-readme-stats.vercel.app/api?username=tttaufiqqq&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=6e40c9&icon_color=6e40c9&text_color=c9d1d9)
-
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=tttaufiqqq&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=6e40c9&text_color=c9d1d9)
-
-![GitHub streak](https://streak-stats.demolab.com?user=tttaufiqqq&theme=dark&hide_border=true&background=0d1117&ring=6e40c9&fire=6e40c9&currStreakLabel=6e40c9)
-
-</div>
-
----
-
-## 🌱 Currently
-
-- 🎓 Finishing my PSM — predicting kelulut (stingless bee) harvest readiness with ML
-- 🧪 Expanding my Proxmox homelab with more self-hosted services
-- 🏴 Playing CTFs and documenting writeups
-- 📖 Going deeper into distributed systems & database internals
-
----
-
-<div align="center">
-<i>Open to internships & collaborations — feel free to reach out!</i>
 </div>
