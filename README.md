@@ -40,6 +40,23 @@
 
 ---
 
+## DevOps Practice
+
+A self-directed DevOps curriculum run against a real project (Animal Shelter Workshop) instead of tutorials: Terraform, Ansible, Docker, Kubernetes, observability, GitOps, and a multi-cloud stretch goal, each stage built, broken, and fixed for real.
+
+| Project | Tech Stack | Description |
+|---|---|---|
+| [Homelab: Infrastructure as Code](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/02-terraform-state-import-and-module.md) | ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white) ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white) | Proved the first real Terraform loop against production Proxmox infrastructure, then moved state onto a proper backend, imported hand-provisioned containers, and replaced duplicated resource blocks with a for_each module |
+| [Homelab: Configuration Management](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/03-ansible-roles-idempotency-molecule-vault-and-fleet-expansion.md) | ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white) | Refactored a single giant Ansible task file into roles, proved idempotency, added Molecule testing, and expanded Vault-backed convergence across the fleet |
+| [Homelab: CI/CD Hardening](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/04-ci-cd-per-connection-smoke-test-pre-deploy-backup-terraform-drift.md) | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) | Closed 3 real gaps in the existing deploy pipeline: a recovery path for failed DB deploys, a pre-deploy backup step, and a Terraform drift check surfaced on every run |
+| [Homelab: Containers](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/05-docker-multi-stage-build-and-compose.md) | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) | Packaged the Laravel app (code, PHP runtime, built frontend) into a multi-stage Docker image and a Compose stack for local testing, the first time it ran anywhere but a hand-configured VM |
+| [Homelab: Kubernetes](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/06-k3s-single-node-deployment-and-vault-injector.md) | ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Vault](https://img.shields.io/badge/Vault-FFEC6E?style=flat-square&logo=vault&logoColor=black) | Deployed the containerized app onto a single-node k3s cluster with the Vault Agent Injector for secrets, self-healing and rolling deploys instead of one container on one host |
+| [Homelab: Observability](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/07-observability-prometheus-grafana-loki-alertmanager.md) | ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) | Fleet-wide monitoring and log aggregation with Prometheus, Grafana, Loki, and Alertmanager, replacing manual curl/kubectl/log-tailing checks with dashboards and alerts |
+| [Homelab: GitOps](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/08-gitops-argocd-auto-sync-and-drift-revert.md) | ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) | ArgoCD watching the k3s cluster against Git, auto-syncing and reverting manual drift so Git became the enforced source of truth instead of a human running kubectl/helm/terraform by hand |
+| [Homelab: Multi-Cloud (Azure)](https://github.com/tttaufiqqq/proxmox-homelab-taufiq/blob/main/docs/19-devops-practice/09-azure-cloud-backup-sync.md) | ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white) | Offsite nightly database backup sync to Azure Blob Storage with a cost-guardrail budget, an Azure Function reading Vault secrets through a Tailscale Funnel, and a second Terraform provider (azurerm) proving the same IaC workflow against a different cloud |
+
+---
+
 ## Technical Skills
 
 **Languages**
@@ -71,6 +88,13 @@
 ![Vault](https://img.shields.io/badge/Vault-FFEC6E?style=flat-square&logo=vault&logoColor=black)
 ![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 
 **Security & Testing**
 
