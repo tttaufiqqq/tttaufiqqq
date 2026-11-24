@@ -9,7 +9,7 @@
 
 ---
 
-## Database & Backend Projects
+## System Projects
 
 | Project | Tech Stack | Description |
 |---|---|---|
